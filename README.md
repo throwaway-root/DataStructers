@@ -16,7 +16,7 @@ P.S. Star and share this repository, if you had fun!
 ## Getting Started
 
 - Create a [Github](https://github.com/) account for free [here](https://github.com/).
-- Register at [Hacktoberfest-2020](https://hacktoberfest.digitalocean.com/) using your github id.
+- Register at [Hacktoberfest-2021](https://hacktoberfest.digitalocean.com/) using your github id.
 - Star this repo and share it with your friends.
 - Add your programs/code to respective folders of each programming language.
 
@@ -32,11 +32,9 @@ P.S. Star and share this repository, if you had fun!
 - How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2020?
   - 4
 
-- How do I track my progress to get an awesome shirt from Hacktoberfest 2020?
+- How do I track my progress to get an awesome shirt from Hacktoberfest 2021?
   - go to : [https://hacktoberfest.digitalocean.com/stats/](https://hacktoberfest.digitalocean.com/stats/)
 
-- What is the duration of Hacktoberfest 2020?
-  - It is from 1st october to 31st october 2020.
 
 - What is the event for?
   - For the open source community engagement.
