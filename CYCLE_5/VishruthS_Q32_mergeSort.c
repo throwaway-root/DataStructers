@@ -50,9 +50,9 @@ void mergeSort(int arr[], int left, int right) // Time complexity: O(nlogn)
 int main()
 {
     int arr[100], size;
-    printf("\nEnter size ");
+    printf("\nEnter the size ");
     scanf("%d", &size);
-    printf("\nEnter array\n");
+    printf("\nEnter the array\n");
     for (int i = 0; i < size; i++)
         scanf("%d", &arr[i]);
 
