@@ -118,9 +118,9 @@ void convertSparseToNormal()
 int main()
 {
     int i, j;
-    printf("\nEnter matrix dimensions: ");
+    printf("\nEnter the matrix dimensions: ");
     scanf("%d %d", &MATRIX_ROWS, &MATRIX_COLS);
-    printf("\nEnter matrix: ");
+    printf("\nEnter the matrix: ");
     for (i = 0; i < MATRIX_ROWS; i++)
         for (j = 0; j < MATRIX_COLS; j++)
             scanf("%d", &matrix[i][j]);
