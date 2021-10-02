@@ -37,10 +37,10 @@ void quickSort(char arr[], int left, int right)
 
 int main()
 {
-
     char str[] = "POLYNOMIAL";
     int n = strlen(str);
     printf("\nOriginal String\n%s", str);
+//function call
     quickSort(str, 0, n - 1);
     printf("\n\nAfter sorting\n%s\n", str);
 
