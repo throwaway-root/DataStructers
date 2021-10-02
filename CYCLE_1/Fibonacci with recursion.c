@@ -1,4 +1,4 @@
-//Write a C program to find the fibonacci series using recursion
+//Write a C program to find the Fibonacci Series using recursion
 
 #include<stdio.h>
 int f(int);
