@@ -33,6 +33,7 @@ bool isValidParenthesis(char *s)
     return stkEmpty();
 }
 
+//main function
 int main()
 {
     char exp[80];
