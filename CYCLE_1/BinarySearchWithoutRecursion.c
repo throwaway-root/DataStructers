@@ -29,7 +29,7 @@ void main()
      printf("Enter the size of the array\n");
      scanf("%d",&n);
 
-     printf("Entar the array\n");
+     printf("Enter the array\n");
      for(int i=0;i<n;i++){
          scanf("%d",&arr[i]);
      }
