@@ -27,6 +27,6 @@ int main()
     printf("\nEnter a number: ");
     scanf("%d", &n);
     int rev = reverseNumber(n);
-    printf("\nReversed number: %d", rev);
+    printf("\nThe Reversed number is: %d", rev);
     return 0;
 }
