@@ -9,6 +9,7 @@ void swap(char *x, char *y)
     *y = t;
 }
 
+//function to perform partition of the arrays
 int partition(char arr[], int start, int end)
 {
     char pivot = arr[end];
@@ -24,6 +25,7 @@ int partition(char arr[], int start, int end)
     return p;
 }
 
+//function to perform quicksort operation
 void quickSort(char arr[], int left, int right)
 {
     if (left > right)
