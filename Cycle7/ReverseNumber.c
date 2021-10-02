@@ -20,6 +20,7 @@ int reverseNumber(int n)
     return rev;
 }
 
+//this is the main function where execution begins
 int main()
 {
     int n;
