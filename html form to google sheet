@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+</head>
+<body>
+  <form method="post" name="google-sheet">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <script>
+    const scriptURL = ''   //paste your deployed web app link here 
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+                                                <!-- GOOGLE SCRIPT CODE -->
+<!-- ---------------------------------------------------------------------------------------------------------->
+
+<!-- var sheetName = 'Sheet1'
+    var scriptProp = PropertiesService.getScriptProperties()
+
+    function intialSetup () {
+      var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+      scriptProp.setProperty('key', activeSpreadsheet.getId())
+    }
+
+    function doPost (e) {
+      var lock = LockService.getScriptLock()
+      lock.tryLock(10000)
+
+      try {
+      var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+      var sheet = doc.getSheetByName(sheetName)
+
+      var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+      var nextRow = sheet.getLastRow() + 1
+
+      var newRow = headers.map(function(header) {
+        return header === 'timestamp' ? new Date() : e.parameter[header]
+      })
+
+      sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+      return ContentService
+        .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      catch (e) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      finally {
+      lock.releaseLock()
+      }
+    } -->
