@@ -1,4 +1,4 @@
-// Write a C program to do binary search without using recursion
+// Write a C program to do binary search without using recursion.
 
 #include <stdio.h> 
   
