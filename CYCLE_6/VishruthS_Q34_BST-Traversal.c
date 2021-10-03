@@ -1,7 +1,7 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 6 QUESTION 1
 //Program  to implement a binary search tree
-//and perform inorder, preorder, & postorder Traversing 
+//and perform inorder, preorder, & postorder Traversing.
 
 
 #include <stdio.h>
