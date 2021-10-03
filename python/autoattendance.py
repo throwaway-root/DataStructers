@@ -1,4 +1,4 @@
-
+#program to automate attendance
 import pyautogui as py
 #print(py.position())
 
