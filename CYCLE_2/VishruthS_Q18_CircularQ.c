@@ -1,6 +1,6 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 2 QUESTION 18
-//To implement a Circular Queue using an array
+//To implement a Circular Queue using an array.
 
 #include <stdio.h>
 #include <stdbool.h>
