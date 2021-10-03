@@ -1,7 +1,7 @@
 //CSL201 DATA STRUCTURES LAB ----- VISHRUTH S, CS3A, 61
 //CYCLE 7 QUESTION 1
 //Program to perfom Depth First Traversal on a graph 
-//represented using the adjacency matrix
+//represented using the adjacency matrix.
 
 #include <stdio.h>
 #include <stdbool.h>
