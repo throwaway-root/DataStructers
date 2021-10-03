@@ -1,3 +1,6 @@
+//this is a binary calculator
+
+
 #include <stdio.h>
 #include<conio.h>
 
