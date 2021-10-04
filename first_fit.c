@@ -20,7 +20,7 @@ void main()
         scanf("%d",&process[i]);
     }
 
-    printf("\nEnter the number of memory blocks: ");
+    printf("Enter the memory blocks: ");
     scanf("%d",&b_no);
     printf("Enter the memory blocks:\n");
     for(i=0;i<b_no;i++)
@@ -39,19 +39,14 @@ void firstfit(int process[],int block[],int p_no,int b_no)
         for(j=0;j<b_no;j++)
             if(block[j]>=process[i])
             {
-                if(index==-1 || block[index]<block[j])
-                    index=j;                    
+                    index=j;
+                    block[index]-=process[i];
+                    break;
             }
-
-
-        if(index==-1)
-            printf("%d\t\tNot allocated\t----\n",i);
+            if(index==-1)
+                printf("%d\t\tNot allocated\t----\n",i);
             
-        else
-        {
-            block[index]-=process[i];
-            printf("%d\t\tAllocated\t%d\n",i,index);
-        }
-
+            else
+                printf("%d\t\tAllocated\t%d\n",i,index);
     }
 }
