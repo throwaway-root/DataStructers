@@ -28,7 +28,7 @@ int main()
 	}
 	else
 	{
-	    printf("Invalid input. Enter a no. less than 10\n");
+	    printf("Invalid input. Enter a number less than 10\n");
 	    goto sort;
 	}
 	return 0;
