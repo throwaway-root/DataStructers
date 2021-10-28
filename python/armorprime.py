@@ -13,7 +13,7 @@ def arm(a):
         print(a,"is not an armstrong number")
 #main
 print("ARMSTRONG NUMBER")
-num=int(input("enter number:"))
+num=int(input("enter a number:"))
 arm(num)
 
 def prime(k):
