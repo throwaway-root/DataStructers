@@ -10,7 +10,8 @@ def cal(l,m,n):
         print("\n",a,"/",b,"=",float(a/b))
     else:
         print("Some error occured,Try again")
-# main program    
+# main program  
+#select the choice
 print("""Select your choice:
 For Binary Calculations
 
@@ -22,6 +23,7 @@ if x==1:
     Binary Calculator
     :::::::::::::::::
     """)
+    
     a=int(input("Enter First Number:"))
     b=int(input("Enter Second Number:")) 
     print("""
