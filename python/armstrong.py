@@ -1,3 +1,4 @@
+#Armstrong number
 def power(x, y):
 	
 	if y == 0:
