@@ -18,7 +18,7 @@ print("4.Divide")
 print("5.Remainder")
 
 while True:
-    choice = input("Please Enter your choice(1/2/3/4/5): ")
+    choice = input("Please Enter your choice from(1/2/3/4/5): ")
 
    
     if choice in ('1', '2', '3', '4','5'):
